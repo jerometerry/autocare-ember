@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "start": "node ./bin/wwwr",
+    "start": "node ./bin/www",
     "test": "ember test",
     "build-prod": "ember build --environment production --output-path ./public/app/"
   },
