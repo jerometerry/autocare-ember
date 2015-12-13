@@ -4,9 +4,13 @@ var ejs = require('ejs');
 
 var app = express();
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/app')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+app.get("/", function(req, res) {
+	res.sendFile("index.html", { root: "./public/ember-app/" });
+});
 
 app.use(function(req, res, next) {
 	var err = new Error('Not Found');

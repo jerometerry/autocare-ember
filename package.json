@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "build-prod": "ember build --environment production --output-path ./public/app/"
   },
   "repository": "",
   "engines": {
