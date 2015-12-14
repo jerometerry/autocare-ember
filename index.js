@@ -4,7 +4,7 @@ var ejs = require('ejs');
 
 var app = express();
 
-app.use(express.static(path.join(__dirname, 'public/app')));
+app.use(express.static(path.join(__dirname, 'public/ember-app')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 

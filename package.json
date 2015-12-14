@@ -11,7 +11,8 @@
     "build": "ember build",
     "start": "node ./bin/www",
     "test": "ember test",
-    "build-prod": "ember build --environment production --output-path ./public/app/"
+    "clean": "rm -rf ./public/ember-app/",
+    "build-prod": "ember build --environment production --output-path ./public/ember-app/"
   },
   "repository": "",
   "engines": {
