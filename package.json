@@ -39,6 +39,7 @@
     "ember-export-application-global": "^1.0.4"
   },
   "dependencies": {
+    "debug": "^2.2.0",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "path": "^0.12.7"
